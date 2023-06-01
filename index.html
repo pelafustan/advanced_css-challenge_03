@@ -5,23 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Oswald&family=Monoton&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/b36b85e4ea.js" crossorigin="anonymous"></script>
     <title>Roundabout</title>
   </head>
   <body>
     <main>
-      <nav>Roundabout</nav>
-      <aside>
+      <header>
+        <nav>
+          <div class="logo">
+            Roundabout <i class="fa-solid fa-headphones fa-xl"></i>
+          </div>
+          <div class="burger">
+            <i class="fa-solid fa-bars fa-xl"></i>
+          </div>
+        </nav>
         <menu>
-          <li>Home</li>
-          <li>Catalogue</li>
-          <li>Deals</li>
-          <li>Contact</li>
+          <button>Home</button>
+          <button>Catalogue</button>
+          <button>Deals</button>
+          <button>Contact</button>
         </menu>
-      </aside>
+      </header>
+      <div class="sort-by">
+        <label for="sorting">Sort by:</label>
+        <select name="sort" id="sorting">
+          <option value="price">Price</option>
+          <option value="name">Name</option>
+          <option value="position">Position</option>
+        </select>
+      </div>
       <div class="products">
         <div class="product">
           <img src="assets/img/preamp.png" alt="pre-amp">
@@ -79,6 +91,14 @@
         <button class="number">3</button>
         <button class="number">»</button>
       </div>
+      <footer>
+        <div class="icons">
+          <i class="fa-brands fa-instagram fa-xl"></i>
+          <i class="fa-brands fa-square-facebook fa-xl"></i>
+          <i class="fa-brands fa-telegram fa-xl"></i>
+        </div>
+        <p>Todos los derechos reservados ©</p>
+      </footer>
     </main>
   </body>
 </html>
