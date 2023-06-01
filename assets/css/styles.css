@@ -1,3 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Roboto:wght@100;300;400;700;900&display=swap');
+
 body {
-  margin: 0;
+  font-family: "Roboto";
+  margin: 1rem;
+  background-color: #282524;
+  color: #fafaf8;
+}
+
+main {
+  display: grid;
+  grid-template-areas: 
+    "header"
+    "products"
+    "pagination"
+    "footer";
+  height: 100vh;
+  row-gap: 1rem;
+  grid-template-rows: 18% auto 6% 12%;
+}
+
+header {
+  color: #282524;
+  background-color: #f8fae7;
+  border: 1px solid #fafaf8;
+  border-radius: 0.5rem;
+  width: 100%;
+  box-shadow: 0px 0px 4px 4px #f1d481;
+}
+
+footer {
+  grid-area: footer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  box-shadow: 0px 0px 4px 4px #f1d481;
+  border-radius: 1rem;
+}
+
+footer p {
+  font-size: 0.75rem;
+  font-weight: 100;
+}
+
+.icons {
+  padding-top: 1rem;
+  width: 33%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.sort-by {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.products {
+  grid-area: products;
+  display: grid;
+  width: 92%;
+  row-gap: 1rem;
+  grid-template-columns: 1fr;
+  place-self: center;
+  margin-top: 1rem;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  padding: 1.5rem 1rem 1.5rem 1rem;
+  border-radius: 0.75rem;
+  background-color: #f8fae7;
+  color: #282524;
+  box-shadow: 0px 0px 4px 4px #f1d481;
+}
+
+.product img {
+  max-width: 90%;
+}
+
+.product-name {
+  font-size: 1.75rem;
+  font-weight: 900;
+}
+
+.price {
+  font-size: 1.25rem;
+  font-weight: 300;
+  margin: 1.5rem 0 1.5rem 0;
+}
+
+button {
+  border: none;
+  margin-bottom: 1rem;
+  background-color: #282524;
+  color: #f8fae7;
+  padding: 0.75rem 1.25rem;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #514a48; 
+}
+
+.pagination {
+  grid-area: pagination;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination button {
+  margin-bottom: 0;
+}
+
+.fa-headphones {
+  margin-left: 0.5rem;
+}
+
+.fa-bars {
+  margin-left: auto;
+  padding-right: 1rem;
+}
+
+.fa-xl:hover {
+  cursor: pointer;
+}
+
+#sorting {
+  width: 80%;
+  height: 2.5rem;
+  background-color: #282524;
+  color: #fafaf8;
+  border-radius: 0.5rem;
+  padding-left: 0.5rem;
 }
