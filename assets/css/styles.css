@@ -238,3 +238,57 @@ button:hover {
     font-size: 1.5rem;
   }
 }
+
+@media (min-width: 992px) {
+  main {
+    grid-template-areas: 
+      "header sort-by"
+      "header products"
+      "footer pagination";
+    grid-template-rows: 14% auto 8% 10%;
+    grid-template-columns: 1fr 3fr;
+    row-gap: 3rem;
+  }
+
+  header {
+    grid-template-areas: 
+      "nav" 
+      "menu";
+    grid-template-rows: 10% 20%;
+
+  }
+
+  .products {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  nav {
+    justify-self: center;
+  }
+
+  menu {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  menu button {
+    text-align: center;
+    margin: 0 auto 0 auto;
+  }
+
+  .sort-by {
+    align-self: center;
+    justify-self: center;
+    width: 90%;
+    place-items: center;
+  }
+
+  .product:nth-child(-n+6) {
+    display: grid;
+  }
+}
